@@ -15,13 +15,6 @@ describe '#player_2' do
   end
 end
 
-describe '#attack' do
-  it 'damages the player' do
-    expect(player_2).to receive(:receive_damage)
-    game.attack(player_2)
-  end
-end
-
 describe '#current_turn' do
   it 'starts as player 1' do
     expect(game.current_turn).to eq player_1
